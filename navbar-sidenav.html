@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Navbar and Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="#ff8a65 deep-orange lighten-2">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="" class="brand-logo">Cummings - Emard</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="navbar-sidenav.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://materializecss.com/icons.html" target="_blank">Material Icons</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+                            <i class="material-icons right">adb
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Dropdown Structure -->
+          <ul id="dropdown-menu" class="dropdown-content #ff8a65 deep-orange lighten-2">
+            <li>
+                <a href="" class="white-text" target="_blank">JS
+
+                </a>
+            </li>
+            <li>
+                <a href="https://react.dev/" class="white-text" target="_blank">React
+
+                </a>
+            </li>
+            <li>
+                <a href="https://nodejs.org/en"  class="white-text" target="_blank">NodeJS
+                    
+                </a>
+            </li>
+          </ul>
+    </div>
+
+ <!-- Sidenav Structure -->
+ <ul id="slide-out" class="sidenav">
+  <li>
+    <div class="user-view">
+        <div class="background">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <a href="">
+            <img src="images/Cupcake2.jpg" alt=""
+            class="circle">
+        </a>
+        <a href="">
+            <span class="white-text name">Keia Dawson</span>
+        </a>
+        <a href="">
+            <span class="white-text email">keia_dawson@gmail.com</span>
+        </a>
+    </div>
+</li>
+<li>
+    <a href="navbar-sidenav.html">Home</a>
+</li>
+<li>
+    <a href="index.html">About</a>
+</li>
+<li>
+    <a href="https://materializecss.com/icons.html" target="_blank">Material Icons</a>
+</li>
+<li>
+    <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+        <i class="material-icons right">arrow_drop_down
+        </i>
+    </a>
+</li>
+</ul>
+
+
+    <!-- Jquery CDN -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        //Dropdown Init
+        $('.dropdown-trigger').dropdown-trigger();
+        //Sidenav init
+        $('.sidenav').sidenav({
+            edge: 'right'
+        });
+    });
+</script>
+</body>
+</html>

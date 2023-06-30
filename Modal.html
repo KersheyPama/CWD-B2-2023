@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modals</title>
+</head>
+<body>
+    
+
+    <h1 class="center pink-text">Modals</h1>
+    <div class="divider"></div>
+    <div class="row">
+        <div class="col s12 m9">
+            <div class="container">
+                <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+                <br>
+                <!-- Modal Trigger -->
+                <a href="#modal1" class="btn waves-effect waves-light modal-trigger">Modal</a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/pexels-designecologist-4824769.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <h2 class="pink-text">Modal Header</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatibus necessitatibus, animi harum laboriosam voluptas suscipit non alias voluptate consequuntur minima molestiae ipsa aspernatur placeat. Quam ab sequi at voluptate!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        <a href="" class="modal-close waves-effect waves-green btn-flat">DIsagree</a>
+                    </div>
+                </div>
+
+                <!-- Modals with Fixed Footer -->
+                <h2 class="pink-text">Models with Fixed Footer</h2>
+                <!-- Modal trigger -->
+                <a href="#modal2" class="waves-effect waves-light btn modal-trigger">Models with Fixed Footer</a>
+                <!-- Modal2 Structure -->
+                <div id="modal2" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/pexels-jéshoots-271458.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card horizontal small">
+                            <div class="card-image">
+                                <img src="images/pexels-laura-james-6097827.jpg" alt="">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3>Modal Header</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nesciunt, minima, beatae illo ipsam quibusdam consequuntur doloribus harum vel at ullam iste possimus eaque eligendi provident? Cum, ut quasi beatae itaque obcaecati porro cumque corrupti illum aut quidem at neque, doloribus dolorum. Autem non accusantium error voluptatem ab sunt quam itaque asperiores numquam, quis ea reiciendis rem dolorem, minus laboriosam dolorum possimus iusto consequatur. Est dicta cumque possimus, molestias illum eius inventore natus fugiat aut voluptate temporibus assumenda deserunt maxime obcaecati.</p>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="modal-close waves-effect waves-green btn-flat pink-text">Click Here</a>
+                    </div>
+                </div>
+                <br>
+                <!-- Bottom Sheet Modals -->
+                <h3 class="pink-text">Modal Bottom Sheet Style</h3>
+                <a href="#modal3" class="waves-effect waves-light btn modal-trigger">Modal Bottom Sheet Style</a>
+                <!-- Modal Structure -->
+                <div id="modal3" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h2 class="pink-text">Modal Bottom Sheet</h2>
+                        <div class="card horizontal small">
+                            <div class="card-image">
+                                <img src="images/pexels-maria-orlova-4906454.jpg" alt="">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3>Modal Header</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nesciunt, minima, beatae illo ipsam quibusdam consequuntur doloribus harum vel at ullam iste possimus eaque eligendi provident? Cum, ut quasi beatae itaque obcaecati porro cumque corrupti illum aut quidem at neque, doloribus dolorum. Autem non accusantium error voluptatem ab sunt quam itaque asperiores numquam, quis ea reiciendis rem dolorem, minus laboriosam dolorum possimus iusto consequatur. Est dicta cumque possimus, molestias illum eius inventore natus fugiat aut voluptate temporibus assumenda deserunt maxime obcaecati.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                              <div class="container">
+                                <div class="input-field">
+                                    <form action="">
+                                        <input type="text" class="datepicker" placeholder="End date of training">
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="container">
+                                  <div class="input-field">
+                                      <form action="">
+                                          <input type="text" class="timepicker" placeholder="Assessment Time">
+                                      </form>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //modal inut
+            $('.modal').modal();
+            opacity: 0,5
+        });
+        //datepicker init
+            $('.datepicker').datepicker();
+        // timepicker init
+            $('.timepicker').timepicker();
+</script>
+</body>
+</html>
